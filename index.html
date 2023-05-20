@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ai belit pula fraiere</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Ai belit pula fraiere</h1>
+    <p>tiam luat ipul ai flood sclavule: <span id="ip"></span></p>
+
+    <script>
+        // Utilizarea API-ului JSON pentru a obține adresa IP
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+            $("#ip").text(data.ip);
+        });
+    </script>
+</body>
+
+</html>
